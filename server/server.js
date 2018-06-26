@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static("build"));
 
 require("./routes/apiRoutes/apiRoutes")(app);
 
